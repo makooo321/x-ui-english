@@ -1,8 +1,3 @@
-FROM golang:latest AS builder
-WORKDIR /root
-COPY . .
-RUN go build main.go
-
 
 FROM debian:11-slim
 LABEL org.opencontainers.image.authors="admin@itsmeniduka.engineer"
